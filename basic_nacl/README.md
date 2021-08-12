@@ -9,7 +9,12 @@ All files necessary for completing the tutorial can be found in this directory.
 
 Find the full tutorial in the LiveComs journal article on best practices for Weighted Ensemble simulations. (Link to be added)
 
+## haMSM restarting
+
+This version of the tutorial includes a west.cfg configured for hamsm restarting
+
 ## Authors
 
 * **Anthony Bogetti** - *Primary work* - [atbogetti](https://github.com/atbogetti)
 * **Alex DeGrave** - *Preliminary work* - [ajd98](https://github.com/ajd98)
+* **John Russo** - *haMSM restarting plugin* - [jdrusso](https://github.com/jdrusso)

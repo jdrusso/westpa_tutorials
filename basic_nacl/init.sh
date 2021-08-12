@@ -7,6 +7,10 @@ source env.sh
 rm -rf traj_segs seg_logs istates west.h5 
 mkdir   seg_logs traj_segs istates
 
+# For restarting plugin
+rm restart.dat
+cp restart_initialization.json{.BAK,}
+
 # Set pointer to bstate and tstate
 BSTATE_ARGS="--bstate-file $WEST_SIM_ROOT/bstates/bstates.txt"
 TSTATE_ARGS="--tstate-file $WEST_SIM_ROOT/tstate.file"
@@ -17,3 +21,4 @@ w_init \
   $TSTATE_ARGS \
   --segs-per-state 5 \
   --work-manager=threads "$@"
+#  --work-manager=threads "$@"
